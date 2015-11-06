@@ -1,0 +1,5 @@
+package BusinessRule;
+
+public class PrintSaleOrder {
+
+}

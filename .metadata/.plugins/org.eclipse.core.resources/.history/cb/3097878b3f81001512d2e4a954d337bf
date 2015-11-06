@@ -1,0 +1,25 @@
+package selenium;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class chrometest {
+public static void main(String[] args) throws InterruptedException{
+	WebDriver driver;
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\sakthivel\\Documents\\Jar files\\chromedriver_win32\\chromedriver.exe");
+	driver = new ChromeDriver();
+	driver.navigate().to("http://kimdev01.keyedinuat.com/Dev03/");
+	driver.manage().window().maximize();
+	driver.findElement(By.xpath(".//form[@method='post']/ul/li[1]/input")).sendKeys("lizc-admin");
+	driver.findElement(By.xpath(".//form[@method='post']/ul/li[2]/input")).sendKeys("password");
+	driver.findElement(By.xpath(".//form[@method='post']/ul/li[3]/input")).click();
+	driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+	driver.findElement(By.xpath(".//*[@title='Sales Orders']")).click();
+	
+	
+}
+}

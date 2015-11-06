@@ -1,0 +1,62 @@
+package selenium;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class testautocomplete {
+
+public static void main(String [] args){
+	WebDriver dr=new FirefoxDriver();
+	driver.get("http://www.google.co.in");  
+	dr.findElement(By.xpath("html/body/div[2]/div/div[1]/div[1]/div/form/div[1]/button[3]")).click();
+	  dr.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	  dr.findElement(By.xpath(".//*[@id='s2id_autogen5']")).click();
+	  List<WebElement> PartNumber = dr.findElements(By.className("select2-results"));
+	  String s1="html/body/div[5]/ul/li[";
+	  String s2="]/div";
+	  int Size=PartNumber.size();
+	  Random rand = new Random(System.currentTimeMillis());
+	  int rval = rand.nextInt(Size);
+	  dr.findElement(By.xpath(s1+rval+s2)).click();
+	  dr.findElement(By.xpath(".//*[@id='select2-chosen-10']")).click();
+	  dr.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	  dr.findElement(By.xpath("html/body/div[6]/div/input")).sendKeys("123");
+	  List<WebElement> DDA = dr.findElements(By.xpath("html/body/div[6]/ul"));
+	  String s3="html/body/div[6]/ul/li[";
+	  String s4="]/div";
+	  int SizeDDA=DDA.size();
+	  Random randm = new Random(System.currentTimeMillis());
+	  int rval1 = randm.nextInt(SizeDDA);
+	  dr.findElement(By.xpath(s3+rval1+s4)).click();
+	  dr.findElement(By.id("Quantity")).sendKeys("10");
+	  dr.findElement(By.id("List_Price")).sendKeys("100");
+	  dr.findElement(By.id("Shipping_Charges")).sendKeys("12");
+	  dr.findElement(By.xpath(".//button[@class='btn btn-xs btn-success']")).click();
+	
+}
+}
+		 
+//List<WebElement> options = driver.findElements(By.xpath("html/body/div[5]/ul/li[1]/div"));
+//Iterator i = options.iterator();
+// while(i.hasNext()){
+//	 WebElement row= (WebElement) i.next();
+//	 System.out.println("Randomly selected value is :"+row.getText());
+//	 row.click();
+//}	 
+	 
+//	 for(WebElement ele:autoPopulatedList)  
+//	 {  
+//		 System.out.println(ele.getText());
+//	      if(ele.getText().equals("testng"))
+//	      {
+//	             System.out.println("Your case passed..!!");
+//	      }  
+//	 }  
+

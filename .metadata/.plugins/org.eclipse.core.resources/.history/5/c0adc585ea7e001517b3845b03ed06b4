@@ -1,0 +1,8 @@
+<suite name="Test-suite">
+<test name="Test">
+<classes>
+<class name="demo1.NewTest"/>
+<class name="demo1.AddSaleOrder"/>
+</classes>
+</test>
+</suite>

@@ -1,0 +1,10 @@
+package selenium;
+
+import org.openqa.selenium.WebDriver;
+
+public class sampletest {
+public static WebDriver dr;
+public static void main(String[] args){
+	
+}
+}

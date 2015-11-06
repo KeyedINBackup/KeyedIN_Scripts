@@ -1,0 +1,5 @@
+#Wed Nov 04 19:17:16 IST 2015
+eclipse.preferences.version=1
+com.project.demo1.outdir=/test-output
+com.project.demo1.useProjectJar=true
+com.project.demo1.disabledListeners=true

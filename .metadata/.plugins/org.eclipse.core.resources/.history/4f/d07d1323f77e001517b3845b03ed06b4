@@ -1,0 +1,126 @@
+package demo1;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+
+public class AddSaleOrder {
+	public static WebDriver driver;
+  @Test(enabled = true)
+  public void main()throws InterruptedException {
+	  	driver = new FirefoxDriver();
+		driver.navigate().to("http://kimdev01.keyedinuat.com/Dev03");
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath(".//form[@method='post']/ul/li[1]/input")).sendKeys("lizc-admin");
+		driver.findElement(By.xpath(".//form[@method='post']/ul/li[2]/input")).sendKeys("password");
+		driver.findElement(By.xpath(".//form[@method='post']/ul/li[3]/input")).click();
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.findElement(By.xpath(".//span[@class='k-icon k-icon-clipboard']")).click();
+		driver.findElement(By.xpath(".//a[@href='/Dev03/Form/Create/70']")).click();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("html/body/div[2]/div/div[1]/div[1]/div/form/div[2]/div/div/fieldset[1]/div/div/div/div[1]/div[2]/div/div/div[2]/div/div[1]/span/div/a/span[1]")).click();
+		driver.findElement(By.xpath("html/body/div[5]/div/input")).sendKeys("Test");
+		driver.findElement(By.xpath("html/body/div[5]/ul/li[2]/div")).click();
+		driver.findElement(By.xpath("html/body/div[2]/div/div[1]/div[1]/div/form/div[2]/div/div/fieldset[1]/div/div/div/div[5]/div[1]/div/div/div[2]/div/div[1]/span/div/a/span[1]")).click();
+		driver.findElement(By.xpath("html/body/div[6]/div/input")).sendKeys("KI Bikes");
+		driver.findElement(By.xpath("html/body/div[6]/ul/li[1]/div")).click();
+		driver.findElement(By.xpath("html/body/div[2]/div/div[1]/div[1]/div/form/div[2]/div/div/fieldset[1]/div/div/div/div[6]/div[1]/div/div/div[2]/div/div[1]/span/div/a/span[1]")).click();
+		driver.findElement(By.xpath("html/body/div[7]/div/input")).sendKeys("CAD - Canadian Dollars");
+		driver.findElement(By.xpath("html/body/div[7]/ul/li[1]/div")).click();
+		driver.findElement(By.xpath("html/body/div[2]/div/div[1]/div[1]/div/form/div[2]/div/div/fieldset[1]/div/div/div/div[8]/div[2]/div/div/div[2]/div/div[1]/span/div/a/span[1]")).click();
+		driver.findElement(By.xpath("html/body/div[8]/div/input")).sendKeys("Mark B");
+		driver.findElement(By.xpath("html/body/div[8]/ul/li[1]/div")).click();
+		driver.findElement(By.xpath(".//button[@class='btn btn-xs btn-success']")).click();
+		System.out.println("Sales order added succesfully");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+  }
+  @Test (enabled = false)
+  public static void function() throws InterruptedException {
+	  
+ 	  		driver.findElement(By.xpath(".//span[@class='k-icon k-icon-clipboard']")).click();
+ 	  		driver.findElement(By.xpath(".//*[@id='main']/div/div[1]/div[2]/div/ul/li[1]/ul/li[2]/div[1]/a[3]")).click();
+ 	  		driver.findElement(By.xpath(".//div[@data-label='Sales Order Acknowledgement - Sales Order Deliveries']")).click();
+ 	  		driver.findElement(By.xpath(".//*[@id='s2id_autogen2']")).click();
+ 	  		driver.findElement(By.xpath(".//*[@id='s2id_autogen2']")).sendKeys("1005");
+ 	  		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+ 	  		driver.findElement(By.xpath("html/body/div[5]/ul/li[1]/div")).click();
+ 	  		driver.findElement(By.xpath(".//*[@id='s2id_autogen2']")).click();
+ 	  		driver.findElement(By.xpath(".//*[@id='s2id_autogen2']")).sendKeys("1122");
+ 	  		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+ 	  		driver.findElement(By.xpath("html/body/div[5]/ul/li/div/span")).click();
+ 	  		driver.findElement(By.xpath(".//*[@id='MainWrapper']/div/form/div[3]/div/button[1]")).click();
+ 	  		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+ 	  		System.out.println("Sales order Delivery Acknowledgement done successfully");
+ 	  	}
+  @Test(enabled = true)
+  public void salesorderack() throws InterruptedException {
+	  		
+	  
+		driver.findElement(By.xpath(".//span[@class='k-icon k-icon-clipboard']")).click();
+		driver.findElement(By.xpath("html/body/div[2]/div/div[1]/div[2]/div/ul/li[1]/ul/li[1]/ul/li[5]/div[1]/a[3]")).click();
+		driver.findElement(By.xpath(".//*[@id='s2id_autogen2']")).click();
+		driver.findElement(By.xpath(".//*[@id='s2id_autogen2']")).sendKeys("1005");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("html/body/div[5]/ul/li[1]/div/span")).click();
+		driver.findElement(By.xpath(".//*[@id='s2id_autogen2']")).click();
+		driver.findElement(By.xpath(".//*[@id='s2id_autogen2']")).sendKeys("1122");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("html/body/div[5]/ul/li/div/span")).click();
+		driver.findElement(By.xpath("html/body/div[2]/div/div[1]/div[1]/div/form/div[3]/div/button[1]")).click();
+		System.out.println("Sales order Acknowledgement done successfully");	
+	  	}
+  
+  @Test (enabled = false)
+  public void SalesReport() throws InterruptedException, AWTException {
+		driver.findElement(By.xpath(".//span[@class='k-icon k-icon-clipboard']")).click();
+		driver.findElement(By.xpath(".//*[@id='main']/div/div[1]/div[2]/div/ul/li[1]/ul/li[2]/div[1]/a[3]")).click();
+		driver.findElement(By.xpath(".//*[@id='main']/div/div[1]/div[2]/div/ul/li[1]/ul/li[1]/ul/li[1]/div[1]/a[3]")).click();
+		
+		driver.findElement(By.xpath(".//span[@id='select2-chosen-2']")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		List<WebElement> options = driver.findElements(By.xpath("html/body/div[5]/ul/li[1]/div"));
+		Iterator i = options.iterator();
+		 while(i.hasNext()){
+			 WebElement row= (WebElement) i.next();
+			 System.out.println("Randomly selected value is :"+row.getText());
+			 row.click();
+		}
+		
+		FirefoxProfile prof = new FirefoxProfile();
+		prof.setPreference("browser.download.folderlist",0);
+		prof.setPreference("browser.helperApps.neverAsk.saveToDisk", "text/csv");
+		driver.findElement(By.xpath("html/body/div[2]/div/div[1]/div[1]/div/form/div[1]/div/a")).click();
+		Robot object = new Robot();
+		object.delay(3000);
+		object.keyPress(KeyEvent.VK_ENTER);
+		object.keyRelease(KeyEvent.VK_ENTER);
+		object.keyPress(KeyEvent.VK_ALT);
+		object.keyPress(KeyEvent.VK_ALT);
+		object.keyRelease(KeyEvent.VK_F4);
+		object.keyRelease(KeyEvent.VK_ALT);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		System.out.println("Sales order delivery listing done Succesfully");
+  }
+  @BeforeMethod
+  public void beforeMethod() {
+	 
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+	
+  }
+
+}

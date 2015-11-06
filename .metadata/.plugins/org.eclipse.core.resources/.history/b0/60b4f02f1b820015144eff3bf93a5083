@@ -1,0 +1,7 @@
+<suite name="CRUDOperation" >
+<test name="TestNG">
+<classes>
+<class name="demo1.CRUD">
+</classes>
+</test>
+</suite>

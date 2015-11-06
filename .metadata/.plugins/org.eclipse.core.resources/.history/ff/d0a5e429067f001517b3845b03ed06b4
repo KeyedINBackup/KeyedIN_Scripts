@@ -1,0 +1,19 @@
+package demo1;
+
+public class test {
+
+	public static String S1;
+	public static void main(String[] ars)
+	{
+		
+	}
+		public static void test1()
+		{
+			S1 = "TESTNG"
+			
+		}
+		public static void test2()
+		{
+			
+		}
+}

@@ -1,0 +1,46 @@
+package selenium;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class testautocomplete {
+
+public static void main(String [] args){
+	WebDriver driver=new FirefoxDriver();
+	driver.get("http://www.google.co.in");  
+	 driver.findElement(By.name("q")).sendKeys("software testing");
+	 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	 String S1="html/body/div[1]/div[3]/form/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div/ul/li[";
+	 String S2="]/div/div[2]";
+	 List<WebElement> autoPopulatedList=driver.findElements(By.xpath("html/body/div/div[3]/form/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div/ul")); 
+	 for(WebElement list: autoPopulatedList){
+		 System.out.println(list.getText());
+	 }
+	 int Size = autoPopulatedList.size();
+	 System.out.println("Auto suggestion list size:" +Size);
+	Random rand = new Random(System.currentTimeMillis());
+	int rval=rand.nextInt(Size)+2;
+	System.out.println("Rval is :" +rval);
+	driver.findElement(By.xpath(S1+rval+S2)).click();
+	
+}
+}
+		 
+		 
+	 
+//	 for(WebElement ele:autoPopulatedList)  
+//	 {  
+//		 System.out.println(ele.getText());
+//	      if(ele.getText().equals("testng"))
+//	      {
+//	             System.out.println("Your case passed..!!");
+//	      }  
+//	 }  
+

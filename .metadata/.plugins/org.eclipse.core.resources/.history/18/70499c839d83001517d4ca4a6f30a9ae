@@ -1,0 +1,12 @@
+package selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class sampletest {
+public static WebDriver dr;
+public static void main(String[] args){
+	dr = new FirefoxDriver();
+	
+}
+}

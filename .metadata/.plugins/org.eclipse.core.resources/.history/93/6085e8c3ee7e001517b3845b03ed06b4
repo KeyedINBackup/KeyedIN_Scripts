@@ -1,0 +1,18 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class ramdomvalueselection {
+public static WebDriver dr = new FirefoxDriver();
+
+public static void main(String[] args){
+	
+	dr.navigate().to("https://www.google.co.in/");
+	dr.findElement(By.xpath(".//input[@id='gs_htif0']")).sendKeys("Selenium");
+	
+	
+}
+
+}

@@ -1,0 +1,42 @@
+package selenium;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class testautocomplete {
+
+public static void main(String [] args){
+	WebDriver driver=new FirefoxDriver();
+	driver.get("http://www.google.co.in");  
+	 driver.findElement(By.name("q")).sendKeys("software testing");
+	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	 List<WebElement> autoPopulatedList=driver.findElements(By.xpath("html/body/div/div[3]/form/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div"));  
+	 System.out.println("Total number of rows: "+autoPopulatedList.size());
+	 Iterator i = autoPopulatedList.iterator();
+	 while(i.hasNext()){
+		 WebElement row= (WebElement) i.next();
+		 System.out.println(row.getText());
+		 row.click();
+	 }
+//	 Random rand = new Random();
+}
+}
+		 
+		 
+	 
+//	 for(WebElement ele:autoPopulatedList)  
+//	 {  
+//		 System.out.println(ele.getText());
+//	      if(ele.getText().equals("testng"))
+//	      {
+//	             System.out.println("Your case passed..!!");
+//	      }  
+//	 }  
+

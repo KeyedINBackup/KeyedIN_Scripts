@@ -1,0 +1,20 @@
+package demo1;
+
+public class test {
+
+	public static String S1;
+	public static void main(String[] ars)
+	{
+		
+	}
+		public static String test1()
+		{
+			S1 = "TESTNG";
+			return S1;
+			
+		}
+		public static void test2()
+		{
+			System.out.println("Value"+S1);
+		}
+}
