@@ -1,0 +1,33 @@
+package selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import com.sun.jna.platform.win32.Netapi32Util.User;
+
+public class login_scenarios {
+public static WebDriver dr= new FirefoxDriver();
+public void main(String[] args){
+	dr.navigate().to("http://kimdev01.keyedinuat.com/Dev03");
+	dr.manage().window().maximize();
+	WebElement Username=dr.findElement(By.xpath(".//form[@method='post']/ul/li[1]/input"));
+	Username.sendKeys("lizc-admin");
+	WebElement Password =dr.findElement(By.xpath(".//form[@method='post']/ul/li[2]/input"));
+	Password.sendKeys("password");
+	
+	if(Username.getText().equals("lizc-admin")){
+		System.out.println("Username is valid.");
+	} else{
+		System.out.println("Invalid Username, Try again.");
+	}
+	if(Password.getSize().equals(8) && Password.getText().equals("password")){
+		System.out.println("Valid Password.");
+	} else{
+		System.out.println("Invalid Password, Try again.");
+	}
+
+	dr.findElement(By.xpath(".//form[@method='post']/ul/li[3]/input")).click();
+}
+}

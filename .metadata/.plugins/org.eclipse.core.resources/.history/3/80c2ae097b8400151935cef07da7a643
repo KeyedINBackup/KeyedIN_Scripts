@@ -1,0 +1,35 @@
+package selenium;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class login_scenarios {
+public static WebDriver dr= new FirefoxDriver();
+public static void main(String[] args){
+	dr.navigate().to("http://kimdev01.keyedinuat.com/Dev03");
+	dr.manage().window().maximize();
+	WebElement Username=dr.findElement(By.xpath(".//form[@method='post']/ul/li[1]/input"));
+	Username.sendKeys("lizc-admin");
+	String text =Username.getText();
+	System.out.println(text);
+	dr.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	WebElement Password =dr.findElement(By.xpath(".//form[@method='post']/ul/li[2]/input"));
+	Password.sendKeys("password");
+		if(!text.trim().equals("lizc-admin")){
+		System.out.println("Username is valid.");
+		} else{
+		System.out.println("Invalid Username, Try again.");
+		}
+		if(Password.getSize().equals(8) && Password.getText().equals("password")){
+		System.out.println("Valid Password.");
+		} else{
+		System.out.println("Invalid Password, Try again.");
+		}
+
+	dr.findElement(By.xpath(".//form[@method='post']/ul/li[3]/input")).click();
+}
+}

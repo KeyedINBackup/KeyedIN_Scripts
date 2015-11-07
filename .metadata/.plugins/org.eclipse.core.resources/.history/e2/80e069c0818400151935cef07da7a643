@@ -1,0 +1,39 @@
+package selenium;
+
+import java.util.concurrent.TimeUnit;
+
+import org.apache.xerces.impl.dv.ValidationContext;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class login_scenarios {
+public static WebDriver dr= new FirefoxDriver();
+public static void main(String[] args){
+	dr.navigate().to("http://kimdev01.keyedinuat.com/Dev03");
+	dr.manage().window().maximize();
+	String text =dr.getPageSource();
+	String validation =dr.getCurrentUrl();
+	System.out.println(validation);
+	WebElement Username=dr.findElement(By.xpath(".//form[@method='post']/ul/li[1]/input"));
+	Username.sendKeys("lizc");
+	WebElement Password =dr.findElement(By.xpath(".//form[@method='post']/ul/li[2]/input"));
+	Password.sendKeys("password");
+	dr.findElement(By.xpath(".//form[@method='post']/ul/li[3]/input")).click();
+	String text =dr.getPageSource();
+		if(text.contains("Username is required") || text.contains("Invalid username or password")){
+		System.out.println("Login in Failed");
+		} else{
+		System.out.println("Logged in");
+		}
+		if(validation.equalsIgnoreCase("http://kimdev01.keyedinuat.com/Dev03")){
+			System.out.println("Logged in");
+		} else{
+		System.out.println("Login in Failed");
+		
+		}
+
+	
+}
+}

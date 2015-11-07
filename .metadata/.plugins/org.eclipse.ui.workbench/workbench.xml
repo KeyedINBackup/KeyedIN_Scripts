@@ -18,7 +18,7 @@
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.browser.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -35,49 +35,40 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
-<part id="5"/>
-<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AddSaleOrder.java" partName="AddSaleOrder.java" path="C:/Selenium/com.project.demo1/src/demo1/AddSaleOrder.java" title="AddSaleOrder.java" tooltip="com.project.demo1/src/demo1/AddSaleOrder.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.project.demo1/src/demo1/AddSaleOrder.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5430" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CRUD.java" partName="CRUD.java" path="C:/Selenium/com.project.demo1/src/demo1/CRUD.java" title="CRUD.java" tooltip="com.project.demo1/src/demo1/CRUD.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CRUD.java" partName="CRUD.java" path="C:/Selenium/com.project.demo1/src/demo1/CRUD.java" title="CRUD.java" tooltip="com.project.demo1/src/demo1/CRUD.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.project.demo1/src/demo1/CRUD.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4967" selectionTopPixel="860"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Demo.java" partName="Demo.java" path="C:/Selenium/com.project.demo1/src/demo1/Demo.java" title="Demo.java" tooltip="com.project.demo1/src/demo1/Demo.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.project.demo1/src/demo1/Demo.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7515" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5093" selectionTopPixel="898"/>
 </editor>
 <editor id="org.eclipse.ui.DefaultTextEditor" name="CRUD.xml" partName="CRUD.xml" path="C:/Selenium/com.project.demo1/CRUD.xml" title="CRUD.xml" tooltip="com.project.demo1/CRUD.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.project.demo1/CRUD.xml"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="720" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="818" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="sampletest.java" partName="sampletest.java" path="C:/Selenium/com.project.selenium/src/selenium/sampletest.java" title="sampletest.java" tooltip="com.project.selenium/src/selenium/sampletest.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.project.selenium/src/selenium/sampletest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="20" selectionOffset="378" selectionTopPixel="27"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="autocompletetest.java" partName="autocompletetest.java" path="C:/Selenium/com.project.selenium/src/selenium/autocompletetest.java" title="autocompletetest.java" tooltip="com.project.selenium/src/selenium/autocompletetest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.project.selenium/src/selenium/autocompletetest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="586" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="testautocomplete.java" partName="testautocomplete.java" path="C:/Selenium/com.project.selenium/src/selenium/testautocomplete.java" title="testautocomplete.java" tooltip="com.project.selenium/src/selenium/testautocomplete.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.project.selenium/src/selenium/testautocomplete.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="1081" selectionOffset="3285" selectionTopPixel="661"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Workflow.java" partName="Workflow.java" path="C:/Selenium/com.project.selenium/src/selenium/Workflow.java" title="Workflow.java" tooltip="com.project.selenium/src/selenium/Workflow.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.project.selenium/src/selenium/Workflow.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2006" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="login_scenarios.java" partName="login_scenarios.java" path="C:/Selenium/com.project.selenium/src/selenium/login_scenarios.java" title="login_scenarios.java" tooltip="com.project.selenium/src/selenium/login_scenarios.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/com.project.selenium/src/selenium/login_scenarios.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1385" selectionTopPixel="201"/>
 </editor>
 </editors>
 <views>
-<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
-<viewState/>
-</view>
 <view id="org.testng.eclipse.ResultView" partName="Results of running suite">
 <viewState FailureRunView.tab.title.ratio="500" HierarchyRunView.tab.title.ratio="286" orientation="2" page="0"/>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (39 items)"/>
 <category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (41 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -181,7 +172,6 @@
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.testng.eclipse.ResultView"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
@@ -212,14 +202,13 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.29710144" ratioLeft="369" ratioRight="873" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.6815069" ratioLeft="597" ratioRight="279" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.23752013" ratioLeft="295" ratioRight="947" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.5605023" ratioLeft="491" ratioRight="385" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.testng.eclipse.ResultView" label="Results of running suite"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
@@ -230,7 +219,6 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -242,6 +230,12 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1e5f75a" ratio="0.74965984" ratioLeft="551" ratioRight="184" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
 </mainWindow>
 </layout>
 </perspective>
@@ -249,154 +243,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/com.project.selenium/src/selenium/sampletest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/com.project.selenium/src/selenium/testautocomplete.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/com.project.demo1/src/demo1/CRUD.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/com.project.demo1/CRUD.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/com.project.selenium/src/selenium/sampletest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/com.project.selenium/src/selenium/autocompletetest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/com.project.selenium/src/selenium/Workflow.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/com.project.selenium/src/selenium/login_scenarios.java"/>
 </editors>
-<item historyLabel="sampletest.java" index="0">
-<position info="not_deleted" x="462" y="0"/>
+<item historyLabel="sampletest.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="testautocomplete.java" index="1">
+<item historyLabel="sampletest.java" index="1">
+<position info="not_deleted" x="963" y="0"/>
+</item>
+<item historyLabel="autocompletetest.java" index="2">
+<position info="not_deleted" x="937" y="109"/>
+</item>
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="1343" y="0"/>
+</item>
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="1604" y="0"/>
+</item>
+<item historyLabel="Workflow.java" index="3">
 <position/>
 </item>
-<item historyLabel="sampletest.java" index="0">
-<position info="not_deleted" x="462" y="0"/>
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="1604" y="0"/>
 </item>
-<item historyLabel="testautocomplete.java" index="1">
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="1563" y="0"/>
+</item>
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="1604" y="0"/>
+</item>
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="2602" y="0"/>
+</item>
+<item historyLabel="Workflow.java" index="3">
 <position/>
 </item>
-<item historyLabel="sampletest.java" index="0">
-<position info="not_deleted" x="462" y="0"/>
-</item>
-<item historyLabel="testautocomplete.java" index="1">
+<item historyLabel="Workflow.java" index="3">
 <position/>
 </item>
-<item historyLabel="sampletest.java" index="0">
-<position info="not_deleted" x="462" y="0"/>
-</item>
-<item historyLabel="testautocomplete.java" index="1">
+<item historyLabel="Workflow.java" index="3">
 <position/>
 </item>
-<item historyLabel="sampletest.java" index="0">
-<position info="not_deleted" x="462" y="0"/>
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="2602" y="0"/>
 </item>
-<item historyLabel="testautocomplete.java" index="1">
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="2604" y="0"/>
+</item>
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="2602" y="0"/>
+</item>
+<item historyLabel="Workflow.java" index="3">
 <position/>
 </item>
-<item historyLabel="sampletest.java" index="0">
-<position info="not_deleted" x="462" y="0"/>
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="2599" y="0"/>
 </item>
-<item historyLabel="testautocomplete.java" index="1">
+<item historyLabel="Workflow.java" index="3">
 <position/>
 </item>
-<item historyLabel="sampletest.java" index="0">
-<position info="not_deleted" x="462" y="0"/>
-</item>
-<item historyLabel="testautocomplete.java" index="1">
+<item historyLabel="Workflow.java" index="3">
 <position/>
 </item>
-<item historyLabel="sampletest.java" index="0">
-<position info="not_deleted" x="522" y="0"/>
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="2564" y="0"/>
 </item>
-<item historyLabel="testautocomplete.java" index="1">
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="1739" y="0"/>
+</item>
+<item historyLabel="CRUD.java" index="0">
+<position info="not_deleted" x="5093" y="0"/>
+</item>
+<item historyLabel="autocompletetest.java" index="2">
+<position info="not_deleted" x="937" y="109"/>
+</item>
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="1433" y="0"/>
+</item>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="1433" y="0"/>
+</item>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="357" y="0"/>
+</item>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="398" y="0"/>
+</item>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="1213" y="0"/>
+</item>
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="426" y="354"/>
+</item>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="617" y="0"/>
+</item>
+<item historyLabel="autocompletetest.java" index="2">
+<position info="not_deleted" x="586" y="10"/>
+</item>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="617" y="0"/>
+</item>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="978" y="0"/>
+</item>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="1159" y="0"/>
+</item>
+<item historyLabel="login_scenarios.java" index="4">
 <position/>
 </item>
-<item historyLabel="sampletest.java" index="0">
-<position info="not_deleted" x="522" y="0"/>
-</item>
-<item historyLabel="sampletest.java" index="0">
-<position info="not_deleted" x="1179" y="0"/>
-</item>
-<item historyLabel="testautocomplete.java" index="1">
+<item historyLabel="login_scenarios.java" index="4">
 <position/>
 </item>
-<item historyLabel="CRUD.java" index="2">
-<position info="not_deleted" x="0" y="13681"/>
-</item>
-<item historyLabel="CRUD.xml" index="3">
-<position info="not_deleted" x="730" y="0"/>
-</item>
-<item historyLabel="sampletest.java" index="0">
-<position info="not_deleted" x="378" y="20"/>
-</item>
-<item historyLabel="CRUD.xml" index="3">
-<position info="not_deleted" x="720" y="0"/>
-</item>
-<item historyLabel="CRUD.java" index="2">
-<position info="not_deleted" x="6189" y="0"/>
-</item>
-<item historyLabel="testautocomplete.java" index="1">
+<item historyLabel="login_scenarios.java" index="4">
 <position/>
 </item>
-<item historyLabel="CRUD.java" index="2">
-<position info="not_deleted" x="6189" y="0"/>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="974" y="0"/>
 </item>
-<item historyLabel="CRUD.xml" index="3">
-<position info="not_deleted" x="720" y="0"/>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="1378" y="0"/>
 </item>
-<item historyLabel="CRUD.java" index="2">
-<position info="not_deleted" x="8231" y="0"/>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="1237" y="0"/>
 </item>
-<item historyLabel="testautocomplete.java" index="1">
-<position/>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="617" y="0"/>
 </item>
-<item historyLabel="CRUD.xml" index="3">
-<position info="not_deleted" x="720" y="0"/>
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="598" y="10"/>
 </item>
-<item historyLabel="CRUD.java" index="2">
-<position info="not_deleted" x="3212" y="410"/>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="1385" y="0"/>
 </item>
-<item historyLabel="testautocomplete.java" index="1">
-<position info="not_deleted" x="420" y="0"/>
+<item historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="2006" y="0"/>
 </item>
-<item historyLabel="sampletest.java" index="0">
-<position info="not_deleted" x="378" y="20"/>
+<item historyLabel="login_scenarios.java" index="4">
+<position info="not_deleted" x="1385" y="0"/>
 </item>
-<item historyLabel="CRUD.java" index="2">
-<position info="not_deleted" x="1184" y="1713"/>
+<item historyLabel="autocompletetest.java" index="2">
+<position info="not_deleted" x="586" y="10"/>
 </item>
-<item historyLabel="testautocomplete.java" index="1">
-<position info="not_deleted" x="1272" y="0"/>
-</item>
-<item historyLabel="CRUD.java" index="2">
-<position info="not_deleted" x="871" y="25"/>
-</item>
-<item historyLabel="testautocomplete.java" index="1">
-<position info="not_deleted" x="2872" y="0"/>
-</item>
-<item historyLabel="CRUD.java" index="2">
-<position info="not_deleted" x="13190" y="423"/>
-</item>
-<item historyLabel="testautocomplete.java" index="1">
-<position info="not_deleted" x="2872" y="0"/>
-</item>
-<item historyLabel="testautocomplete.java" index="1">
-<position info="not_deleted" x="3612" y="0"/>
-</item>
-<item historyLabel="testautocomplete.java" index="1">
-<position/>
-</item>
-<item historyLabel="testautocomplete.java" index="1">
-<position info="not_deleted" x="4114" y="0"/>
-</item>
-<item historyLabel="testautocomplete.java" index="1">
-<position/>
-</item>
-<item historyLabel="testautocomplete.java" index="1">
-<position info="not_deleted" x="3625" y="0"/>
-</item>
-<item historyLabel="testautocomplete.java" index="1">
-<position info="not_deleted" x="3013" y="0"/>
-</item>
-<item historyLabel="CRUD.java" index="2">
-<position info="not_deleted" x="13190" y="423"/>
-</item>
-<item historyLabel="testautocomplete.java" index="1">
-<position info="not_deleted" x="3285" y="1081"/>
-</item>
-<item active="true" historyLabel="CRUD.java" index="2">
-<position info="not_deleted" x="13190" y="423"/>
+<item active="true" historyLabel="Workflow.java" index="3">
+<position info="not_deleted" x="2006" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -418,6 +419,24 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="login_scenarios.java" tooltip="com.project.selenium/src/selenium/login_scenarios.java">
+<persistable path="/com.project.selenium/src/selenium/login_scenarios.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="sampletest.java" tooltip="com.project.selenium/src/selenium/sampletest.java">
+<persistable path="/com.project.selenium/src/selenium/sampletest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Workflow.java" tooltip="com.project.selenium/src/selenium/Workflow.java">
+<persistable path="/com.project.selenium/src/selenium/Workflow.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="autocompletetest.java" tooltip="com.project.selenium/src/selenium/autocompletetest.java">
+<persistable path="/com.project.selenium/src/selenium/autocompletetest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="loginpage.java" tooltip="com.project.selenium/src/login/loginpage.java">
+<persistable path="/com.project.selenium/src/login/loginpage.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editorSupport" name="Default test.html" tooltip="com.project.demo1/test-output/Default suite/Default test.html">
+<persistable path="/com.project.demo1/test-output/Default suite/Default test.html"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editorSupport" name="index.html" tooltip="com.project.demo1/test-output/html/index.html">
 <persistable path="/com.project.demo1/test-output/html/index.html"/>
 </file>
@@ -426,30 +445,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editorSupport" name="emailable-report.html" tooltip="com.project.demo1/test-output/emailable-report.html">
 <persistable path="/com.project.demo1/test-output/emailable-report.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="testautocomplete.java" tooltip="com.project.selenium/src/selenium/testautocomplete.java">
-<persistable path="/com.project.selenium/src/selenium/testautocomplete.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="sampletest.java" tooltip="com.project.selenium/src/selenium/sampletest.java">
-<persistable path="/com.project.selenium/src/selenium/sampletest.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="CRUD.xml" tooltip="com.project.demo1/CRUD.xml">
-<persistable path="/com.project.demo1/CRUD.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Demo.java" tooltip="com.project.demo1/src/demo1/Demo.java">
-<persistable path="/com.project.demo1/src/demo1/Demo.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editorSupport" name="overview.html" tooltip="com.project.demo1/test-output/html/overview.html">
-<persistable path="/com.project.demo1/test-output/html/overview.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editorSupport" name="suite1_test1_results.html" tooltip="com.project.demo1/test-output/html/suite1_test1_results.html">
-<persistable path="/com.project.demo1/test-output/html/suite1_test1_results.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editorSupport" name="suites.html" tooltip="com.project.demo1/test-output/html/suites.html">
-<persistable path="/com.project.demo1/test-output/html/suites.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editorSupport" name="suite1_groups.html" tooltip="com.project.demo1/test-output/html/suite1_groups.html">
-<persistable path="/com.project.demo1/test-output/html/suite1_groups.html"/>
 </file>
 </mruList>
 </workbench>

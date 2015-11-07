@@ -1,0 +1,24 @@
+package selenium;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Workflow {
+public static WebDriver dr;
+public static void main(String[] args){
+	dr=new FirefoxDriver();
+	dr.navigate().to("http://kimdev01.keyedinuat.com/Dev03");
+	dr.manage().window().maximize();
+	dr.findElement(By.xpath(".//form[@method='post']/ul/li[1]/input")).sendKeys("lizc-admin");
+	dr.findElement(By.xpath(".//form[@method='post']/ul/li[2]/input")).sendKeys("password");
+	dr.findElement(By.xpath(".//form[@method='post']/ul/li[3]/input")).click();
+	dr.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+	dr.findElement(By.xpath(".//span[@class='k-icon k-icon-clipboard']")).click();
+	dr.findElement(By.xpath("html/body/div[2]/div/div[1]/div[2]/div/ul/li[1]/ul/li[1]/div[1]/a[3]")).click();
+	
+}
+
+}

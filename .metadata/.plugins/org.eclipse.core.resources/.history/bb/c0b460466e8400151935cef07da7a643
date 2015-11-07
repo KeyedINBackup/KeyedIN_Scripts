@@ -1,0 +1,61 @@
+package selenium;
+
+import java.sql.Driver;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Workflow {
+public static WebDriver dr;
+public static void main(String[] args){
+	dr=new FirefoxDriver();
+	dr.navigate().to("http://kimdev01.keyedinuat.com/Dev03");
+	dr.manage().window().maximize();
+	dr.findElement(By.xpath(".//form[@method='post']/ul/li[1]/input")).sendKeys("lizc-admin");
+	dr.findElement(By.xpath(".//form[@method='post']/ul/li[2]/input")).sendKeys("password");
+	dr.findElement(By.xpath(".//form[@method='post']/ul/li[3]/input")).click();
+	dr.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+	dr.findElement(By.xpath(".//span[@class='k-icon k-icon-clipboard']")).click();
+	dr.findElement(By.xpath("html/body/div[2]/div/div[1]/div[2]/div/ul/li[1]/ul/li[1]/div[1]/a[3]")).click();
+	List<WebElement> tab = dr.findElements(By.tagName("tr"));
+	String S1="html/body/div[2]/div/div[1]/div[1]/div/form/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[";
+	String S2="]/td[1]/div[2]/a[6]";
+	int sel=tab.size();
+	Random rad = new Random(System.currentTimeMillis());
+	int val=rad.nextInt(sel);
+	dr.findElement(By.xpath(S1+val+S2)).click();
+	dr.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	String S3="html/body/div[2]/div/div[1]/div[1]/div/form/div[2]/div/div[2]/div[3]/div[2]/div/table/tbody/tr[";
+	String S4="]/td[1]/div[2]/ul/li[2]";
+	dr.findElement(By.xpath(S3+val+S4)).click();
+	dr.findElement(By.xpath(".//span[@id='select2-chosen-6']")).click();
+	List<WebElement> BUNit = dr.findElements(By.className("select2-results"));
+	String S5="html/body/div[5]/ul/li[";
+	String S6 ="]/div";
+	int sum =BUNit.size();
+	Random nval = new Random(System.currentTimeMillis());
+	int val1=nval.nextInt(sum);
+	dr.findElement(By.xpath(S5+val1+S6)).click();
+	dr.findElement(By.xpath(".//span[@class='box']/a[1]")).click();
+	dr.switchTo().frame(0);
+	List<WebElement> table1 =dr.findElements(By.tagName("tr"));
+	String S7="html/body/div[1]/form/div[2]/div[2]/div[2]/div[2]/div/table/tbody/tr[";
+	String S8="]/td[1]";
+	int tabval = table1.size();
+	Random rand2= new Random(System.currentTimeMillis());
+	int rval2 = rand2.nextInt(tabval);
+	dr.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	dr.findElement(By.xpath(S7+rval2+S8)).click();
+	dr.findElement(By.xpath("html/body/div[2]/div/div[1]/div[1]/div/form/div[1]/button[1]")).click();
+	dr.close();
+	
+}
+
+}
