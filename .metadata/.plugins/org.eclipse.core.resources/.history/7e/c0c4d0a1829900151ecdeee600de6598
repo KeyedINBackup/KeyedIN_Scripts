@@ -1,0 +1,7 @@
+package sampleTestWork;
+
+public class ToolsQA {
+
+	public static WebDriver dr; 
+	
+}

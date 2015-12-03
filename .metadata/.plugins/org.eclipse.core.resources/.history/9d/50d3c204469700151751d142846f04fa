@@ -1,0 +1,37 @@
+package sampleTestWork;
+
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class RomeoTest {
+public static WebDriver dr;
+
+public static void main(String[] args){
+	dr = new FirefoxDriver();
+	dr.get("http://dev.researchservicesoffice.com/");
+	dr.manage().window().maximize();
+	dr.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	dr.findElement(By.xpath(".//*[@id='content']/ul/li[2]/a")).click();
+	dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_txtUserName']")).sendKeys("su");
+	dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_txtPassword']")).sendKeys("sudemo");
+	dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_btnSubmit']")).click();
+	List<WebElement> li = dr.findElements(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_panel1']/ul/li[1]"));
+	System.out.println("Val: "+li.size());
+	Random rand = new Random(System.currentTimeMillis());
+	WebElement w = li.get(rand.nextInt(li.size()));
+	
+	System.out.println("Val: "+w.getText());
+	w.click();
+	
+	
+	
+	
+}
+
+}

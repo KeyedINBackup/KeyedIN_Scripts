@@ -1,0 +1,30 @@
+package DDaddSalesOrder;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.poi.hssf.usermodel.*;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.*;
+
+public class DDwithPOI {
+	
+	public void SetExcelPath(String FilePath, String Filename, String Sheetname) throws Exception{
+		try{
+			File file = new File(FilePath+"\\"+Filename);
+			FileInputStream input = new FileInputStream(file);
+			Workbook Excelbook = null;
+			String fileExtension = Filename.substring(Filename.indexOf("."));
+			if(fileExtension.equals(".xlsx")){
+				Excelbook = new XSSFWorkbook(input);
+			} else if(fileExtension.equals(".xls")){
+				Excelbook = new HSSFWorkbook(input);
+			}
+			Sheet getworkSheet = Excelbook.getSheet(Sheetname);
+		}catch(Exception e){
+			throw e;
+		}
+	}
+
+}

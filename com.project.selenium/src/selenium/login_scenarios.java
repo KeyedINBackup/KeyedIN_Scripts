@@ -13,7 +13,7 @@ public static void main(String[] args){
 	dr.navigate().to("http://kimdev01.keyedinuat.com/Dev03");
 	dr.manage().window().maximize();
 	WebElement Username=dr.findElement(By.xpath(".//form[@method='post']/ul/li[1]/input"));
-	Username.sendKeys("lizc");
+	Username.sendKeys("lizc-admin");
 	WebElement Password =dr.findElement(By.xpath(".//form[@method='post']/ul/li[2]/input"));
 	Password.sendKeys("password");
 	dr.findElement(By.xpath(".//form[@method='post']/ul/li[3]/input")).click();

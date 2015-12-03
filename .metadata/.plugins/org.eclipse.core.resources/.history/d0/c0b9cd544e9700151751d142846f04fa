@@ -1,0 +1,13 @@
+package sampleTestWork;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class test_05 {
+public static WebDriver dr;
+public static void main(String[] args){
+	dr = new FirefoxDriver();
+	dr.get("http://toolsqa.com/automation-practice-table/");
+}
+
+}

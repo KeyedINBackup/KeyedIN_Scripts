@@ -1,0 +1,21 @@
+package sampleTestWork;
+
+
+public class A{
+
+ 
+  int GetValue()
+ {
+        int pass;
+		return (true ? pass : 0);
+ }
+ 
+ public static void main(String[] args)  {
+ 
+   A obj= new A();
+
+      obj.GetValue();
+ 
+    }
+ 
+}

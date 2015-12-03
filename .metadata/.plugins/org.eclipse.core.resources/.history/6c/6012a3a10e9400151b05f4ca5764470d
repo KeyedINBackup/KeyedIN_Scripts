@@ -1,0 +1,23 @@
+package sampleTestWork;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class DDtest {
+
+	public static WebDriver dr= new FirefoxDriver();
+	
+	public static void main(String[] args) throws InterruptedException{
+		dr.get("http://kimdev01.keyedinuat.com/Dev03/User/SignIn");
+		dr.manage().window().maximize();
+		dr.findElement(By.xpath(".//input[@name='username']")).sendKeys("lizc-admin");
+		dr.findElement(By.xpath(".//input[@name='password']")).sendKeys("password");
+		dr.findElement(By.xpath(".//input[@value='Sign In']")).click();
+		dr.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		dr.findElement(By.xpath(".//a[@title='Sales Orders']")).click();
+		dr.findElement(By.xpath(".//*[@id='main']/div/div[1]/div[2]/div/ul/li[1]/ul/li[1]/ul/li[1]/div[1]/a[3]")).click();

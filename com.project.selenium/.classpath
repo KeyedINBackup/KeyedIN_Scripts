@@ -10,5 +10,7 @@
 	<classpathentry kind="lib" path="C:/Users/sakthivel/Documents/Jar files/poi-bin-3.13-20150929/poi-3.13/poi-scratchpad-3.13-20150929.jar"/>
 	<classpathentry kind="lib" path="C:/Users/sakthivel/Documents/Jar files/poi-bin-3.13-20150929/poi-3.13/ooxml-lib/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/sakthivel/Documents/Jar files/selenium-server-standalone-2.48.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sakthivel/Downloads/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sakthivel/Downloads/mail-1.4.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
