@@ -62,7 +62,6 @@ public static void get1()
 	String result = web.getText();
 	System.out.println("The selected option from the list: "+result);
 	web.click();
-	dr.close();
 	dr.switchTo().window(wind1);
 	
 	dr.close();

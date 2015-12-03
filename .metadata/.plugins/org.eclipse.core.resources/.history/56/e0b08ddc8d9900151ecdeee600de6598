@@ -21,15 +21,15 @@ public class ToolsQA {
 		dr.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		dr.findElement(By.xpath(".//*[@id='liTL']/a")).click();
 		List<WebElement> li =dr.findElements(By.xpath(".//*[@id='top-sub-menu']/div[1]/a"));
-		System.out.println("The options are:");
 		for(WebElement TextList : li){
 			String output = TextList.getText();
+			System.out.println("The options are:");
 			System.out.println(output);
 		}
 		Random rand = new Random(System.currentTimeMillis());
 		WebElement web =li.get(rand.nextInt(li.size()));
 		String result = web.getText();
-		System.out.println("The selected option from the list: "+result);
+		System.out.println("The selected option from the list:"+result);
 		web.click();
 		dr.close();
 	

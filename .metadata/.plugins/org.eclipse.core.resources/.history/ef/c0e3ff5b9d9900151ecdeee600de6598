@@ -50,7 +50,7 @@ public static void get1()
 	
 	WebDriverWait wait = new WebDriverWait(dr, 20);
 	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='ctl00_menuContentPlaceHolder_TemplateRadMenu']/ul/li[2]/a")));
-//	dr.findElement(By.xpath(".//*[@id='ctl00_menuContentPlaceHolder_TemplateRadMenu']/ul/li[2]/a")).click();
+	dr.findElement(By.xpath(".//*[@id='ctl00_menuContentPlaceHolder_TemplateRadMenu']/ul/li[2]/a")).click();
 	List<WebElement> li =dr.findElements(By.xpath(".//*[@id='ctl00_menuContentPlaceHolder_TemplateRadMenu']/ul/li"));
 	System.out.println("The options are:");
 	for(WebElement TextList : li){
@@ -62,9 +62,6 @@ public static void get1()
 	String result = web.getText();
 	System.out.println("The selected option from the list: "+result);
 	web.click();
-	dr.close();
-	dr.switchTo().window(wind1);
-	
 	dr.close();
 	
 	

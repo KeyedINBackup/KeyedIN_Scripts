@@ -29,7 +29,7 @@ public class ToolsQA {
 		Random rand = new Random(System.currentTimeMillis());
 		WebElement web =li.get(rand.nextInt(li.size()));
 		String result = web.getText();
-		System.out.println("The selected option from the list: "+result);
+		System.out.println("The selected option from the list:"+result);
 		web.click();
 		dr.close();
 	
