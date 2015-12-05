@@ -1,0 +1,22 @@
+package com.pom.testMethods;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import com.pom.pages.*;
+
+public class POM_test {
+
+	private static WebDriver dr = null;
+	
+	public static void main(String[] args){
+		
+		dr = new FirefoxDriver();
+		dr.get("http://kimdev01.keyedinuat.com/Dev03/User/SignIn");
+		loginpage.txtbox_username(dr).sendKeys("lizc-admin");
+		loginpage.txtbox_password(dr).sendKeys("password");
+		
+		
+	}
+	
+	
+}

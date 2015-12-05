@@ -1,0 +1,8 @@
+package com.pom.pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class loginpage {
+
+	private static WebDriver dr= null;
+}

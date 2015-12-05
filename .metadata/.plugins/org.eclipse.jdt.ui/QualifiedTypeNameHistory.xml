@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.junit.Ignore"/>
-<fullyQualifiedTypeName name="org.apache.xalan.xsltc.compiler.util.CompareGenerator"/>
-<fullyQualifiedTypeName name="com.thoughtworks.selenium.webdriven.commands.KeyEvent"/>
-<fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
 <fullyQualifiedTypeName name="demo1.AddSaleOrder"/>
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
 <fullyQualifiedTypeName name="demo1.loginpage"/>
@@ -31,13 +27,10 @@
 <fullyQualifiedTypeName name="org.eclipse.jetty.websocket.api.Session"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="com.sun.jna.Structure.FFIType.size_t"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
 <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
 <fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.html.RowContainer"/>
 <fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Workbook"/>
-<fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFWorkbook"/>
 <fullyQualifiedTypeName name="org.apache.poi.hssf.usermodel.HSSFWorkbook"/>
 <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Sheet"/>
 <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Row"/>
@@ -46,18 +39,25 @@
 <fullyQualifiedTypeName name="sampleTestWork.testPOiWrite"/>
 <fullyQualifiedTypeName name="DDaddSalesOrder.DDwithPOI"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
-<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="org.apache.poi.util.SystemOutLogger"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.thoughtworks.selenium.webdriven.commands.GetText"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.ie.InternetExplorerDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.remote.DesiredCapabilities"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Alert"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="com.pom.pages.loginpage"/>
+<fullyQualifiedTypeName name="com.pom.pages.homePage"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFWorkbook"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
+<fullyQualifiedTypeName name="javax.xml.ws.WebEndpoint"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="romeo.dd.romeo_ddscript"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 </qualifiedTypeNameHistroy>

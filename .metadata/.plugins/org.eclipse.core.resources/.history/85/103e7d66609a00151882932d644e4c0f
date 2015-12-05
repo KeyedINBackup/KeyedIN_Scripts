@@ -1,0 +1,27 @@
+package com.pom.testMethods;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import com.pom.pages.*;
+
+public class POM_test {
+
+	private static WebDriver dr = null;
+	
+	public static void main(String[] args){
+		
+		dr = new FirefoxDriver();
+		dr.get("http://kimdev01.keyedinuat.com/Dev03/User/SignIn");
+		dr.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		loginpage.txtbox_username(dr).sendKeys("lizc-admin");
+		loginpage.txtbox_password(dr).sendKeys("password");
+		loginpage.btn_login(dr).click();
+		System.out.println("Login in successfully");
+		homePage.tx
+		
+	}
+	
+	
+}

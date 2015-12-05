@@ -1,0 +1,60 @@
+package romeo.dd;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+import org.apache.poi.xssf.usermodel.*;
+
+public class romeo_ddscript {
+
+	private static XSSFWorkbook Excelbook;
+	private static XSSFSheet ExcelSheet;
+	private static XSSFRow row;
+	private static XSSFCell cell;
+	
+	public static void getExcelpath(String Filename, String SheetName) throws Exception{
+		try{
+			FileInputStream input = new FileInputStream(Filename);
+			Excelbook  = new XSSFWorkbook(input);
+			ExcelSheet = Excelbook.getSheet(SheetName);
+			
+		} catch(Exception e){
+			throw e;
+		}
+	}
+	
+	public static String GetExcelData(int Rownum, int Colnum){
+		try{
+			cell=ExcelSheet.getRow(Rownum).getCell(Colnum);
+			String cellvalue=cell.getStringCellValue();
+			return cellvalue;
+		} catch(Exception e){
+			return"";
+		}
+		
+	}
+	
+	public static void SetExcelValue(int Rownum, int Colnum, String result)throws Exception{
+		try{
+			row=ExcelSheet.getRow(Rownum);
+			cell= row.getCell(Colnum, row.RETURN_BLANK_AS_NULL);
+			if(cell==null){
+				cell=row.createCell(Colnum);
+				cell.setCellValue(result);
+			}
+			else{
+				cell.setCellValue(result);
+			}
+		 
+		FileOutputStream out = new FileOutputStream("C://Users//sakthivel//Desktop//Awd_user_100.xlsx");
+		Excelbook.write(out);
+		out.flush();
+		out.close();
+		}
+		catch (Exception e){
+			throw e;
+		}
+	}
+}
+	
+

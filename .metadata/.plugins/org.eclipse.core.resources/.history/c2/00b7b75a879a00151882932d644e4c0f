@@ -1,0 +1,16 @@
+package romeo.dd;
+import org.openqa.selenium.WebDriver;
+
+import romeo.dd.romeo_ddscript;
+public class AwardUserFile {
+ public static WebDriver dr;
+ 
+ public static void main(String[] args) throws Exception{
+	 
+//	 romeo_ddscript.getExcelpath("C://Users//sakthivel//Desktop//Awd_user_100.xlsx", "Sheet1");
+	 dr.get("http://172.16.11.18/load.romeo/");
+	 
+ }
+ 
+	
+}

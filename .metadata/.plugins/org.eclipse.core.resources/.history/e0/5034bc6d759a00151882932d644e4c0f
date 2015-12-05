@@ -1,0 +1,23 @@
+package romeo.dd;
+
+import java.io.FileInputStream;
+
+import org.apache.poi.xssf.usermodel.*;
+
+public class romeo_ddscript {
+
+	private static XSSFWorkbook Excelbook;
+	private static XSSFSheet ExcelSheet;
+	private static XSSFRow row;
+	private static XSSFCell cell;
+	
+	public static void getExcelpath(String Filename, String SheetName){
+		try{
+			FileInputStream input = new FileInputStream(Filename);
+			Excelbook  = new XSSFWorkbook(input);
+			ExcelSheet = Excelbook.getSheet(SheetName);
+			
+		}
+	}
+	
+}
